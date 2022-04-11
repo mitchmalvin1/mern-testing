@@ -32,7 +32,7 @@ function App() {
 
     const deleteFriend =  (id) => {
         console.log(id);
-         Axios.delete(`https://mern-testt.herokuapp.com//delete/${id}`).then ( () => {
+         Axios.delete(`https://mern-testt.herokuapp.com/delete/${id}`).then ( () => {
              setList( listFriend.filter( (val) => {
                  return val._id !== id;
              }) )
