@@ -42,7 +42,7 @@ function App() {
 
 
     useEffect(() => {
-        Axios.get('https://mern-testt.herokuapp.com//read').then((response) => {
+        Axios.get('https://mern-testt.herokuapp.com/read').then((response) => {
             setList(response.data);
 
         }).catch(() => {
