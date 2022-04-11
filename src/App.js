@@ -34,7 +34,7 @@ function App() {
         console.log(id);
          Axios.delete(`https://mern-testt.herokuapp.com//delete/${id}`).then ( () => {
              setList( listFriend.filter( (val) => {
-                 return val._id != id;
+                 return val._id !== id;
              }) )
          })
      
